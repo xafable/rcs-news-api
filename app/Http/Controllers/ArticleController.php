@@ -11,7 +11,7 @@ class ArticleController extends Controller
     function __construct()
     {
         $this->middleware(function ($request, $next) {
-            $failsf = [];
+            $fails = [];
             $id = $request->route()->parameter('id');
 
             if(!is_numeric($id))
